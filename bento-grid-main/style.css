@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 2px solid black;
+    margin: 2rem;
+}
+
+.container {
+    margin: 1rem 2rem;
+    border: 2px solid red;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px
+}
+
+.create {
+    border: 2px solid green;
+}
+
+
