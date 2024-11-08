@@ -9,17 +9,19 @@
 body {
     border: 2px solid black;
     margin: 2rem;
-    font-family: "DM Sans", sans-serif;;
+    font-family: "DM Sans", sans-serif;
 }
 
 .container {
     /* margin: 1rem 2rem; */
-    margin: 1rem 2rem auto;
+    max-width: 850px;
+    margin: 0 auto;
     border: 2px solid red;
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, 1fr));
     grid-template-rows: repeat(6, minmax(60px, auto));
     gap: 20px;
+    background-color: whitesmoke;
 }
 
 .container > div {
@@ -32,14 +34,14 @@ body {
 }
 
 .container > div > p {
-    line-height: 1.2rem;
+    line-height: 2rem;
 }
 
 .create {
     border: 2px solid green;
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 2em;
     grid-column: 1 / 2;
     grid-row: 1 / 4;
     background-color: hsl(31, 66%, 93%);
@@ -48,7 +50,7 @@ body {
 }
 
 .create p {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .purple-italics {
@@ -71,6 +73,8 @@ body {
 .social h1 {
     text-align: center;
     padding-bottom: 1rem;
+    font-weight: 400;
+    font-size: 2.5rem;
 }
 
 .social img {
@@ -101,6 +105,11 @@ body {
     font-size: 1.2rem;
     justify-content: space-between;
     background-color: hsl(39, 100%, 71%);
+    font-size: 2em;
+}
+
+.write p {
+    padding-bottom: 2rem;
 }
 
 .grow {
@@ -113,12 +122,22 @@ body {
     border: 1px solid brown;
     grid-column: 2 / 3;
     grid-row: 3 / 5;
+    background-color: white;
+    display: grid;
+    align-content: space-evenly;
 }
 
 .maintain {
     border: 2px solid gold;
     grid-column: 3 / 4;
     grid-row: 3 / 5;
+    background-color: hsl(39, 100%, 71%);
+    display: grid;
+    /* align-content: space-between; */
+}
+
+.maintain P {
+    padding-bottom: 1rem;
 }
 
 .faster {
