@@ -15,6 +15,7 @@ body {
 .container {
     /* margin: 1rem 2rem; */
     max-width: 850px;
+    max-height: auto;
     margin: 0 auto;
     border: 2px solid red;
     display: grid;
@@ -94,6 +95,12 @@ body {
     border: 2px solid yellow;
     grid-column: 4 / -1;
     grid-row: 1 / 5;
+    background-color: hsl(254, 88%, 90%);
+    display: grid;
+}
+
+.schedule h2 {
+    font-weight: 400;
 }
 
 .write {
@@ -116,6 +123,15 @@ body {
     border: 2px solid purple;
     grid-column: 3 / -1;
     grid-row: 5 / -1;
+    display: flex;
+    background-color: hsl(256, 67%, 59%);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.grow img {
+    width: 90%;
+    height: auto;
 }
 
 .manage {
@@ -125,6 +141,7 @@ body {
     background-color: white;
     display: grid;
     align-content: space-evenly;
+    font-size: 1.5rem;
 }
 
 .maintain {
@@ -133,7 +150,13 @@ body {
     grid-row: 3 / 5;
     background-color: hsl(39, 100%, 71%);
     display: grid;
+    font-size: 1.5rem;
     /* align-content: space-between; */
+}
+
+.no-bottom-padding {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .maintain P {
@@ -144,6 +167,10 @@ body {
     border: 2px solid turquoise;
     grid-column: 2 / 3;
     grid-row: 5 / 7;
+}
+
+.faster p {
+    font-size: 0.75rem;
 }
 
 
